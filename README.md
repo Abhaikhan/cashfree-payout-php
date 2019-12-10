@@ -1,4 +1,4 @@
-# Cashfree Payout Integration Kit for Java
+# Cashfree Payout Integration Kit for PHP
 
 Below is an integration flow on how to use Cashfree's payouts.
 Please go through the payout docs [here](https://docs.cashfree.com/docs/payout/guide/)
