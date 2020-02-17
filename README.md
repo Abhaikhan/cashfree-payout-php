@@ -1,7 +1,7 @@
 # Cashfree Payout Integration Kit for PHP
 
 Below is an integration flow on how to use Cashfree's payouts.
-Please go through the payout docs [here](https://docs.cashfree.com/docs/payout/guide/)
+Please go through the payout docs [here](https://dev.cashfree.com/payouts)
 <br/>
 This kit is linked to the standard transfer flow. Go [here](https://dev.cashfree.com/payouts/integrations/standard-transfer) to get a better understanding.
 <br/>
@@ -28,7 +28,7 @@ follow the following build steps to compile the Integration kit:
 The following kit uses information stored within the index.php file. Before running the code for the first time open the index.php file
 and add the relevant details:
   1. ClientId: This is a unique Identifier that identifies the merchant. For more information please go [here](https://dev.cashfree.com/development/api/credentials).
-  2. ClientSecret: Corresponding secret key for the given ClientId that helps Cashfree indentify the merchant. For more information please go [here](https://dev.cashfree.com/development/api/credentials).
+  2. ClientSecret: Corresponding secret key for the given ClientId that helps Cashfree identify the merchant. For more information please go [here](https://dev.cashfree.com/development/api/credentials).
   3. Environment: Enviornment to be hit. The following values are accepted prod: for production, test: for test enviornment.
 
 ### IP Whitelisting:
@@ -36,16 +36,16 @@ and add the relevant details:
 Your IP has to be whitelisted to hit Cashfree's server. For more information please go [here](https://dev.cashfree.com/development/api/ip-whitelisting).
 
 ### Beneficiary:
-The following kit needs beneficiary details in order to check if the beneficary exists and if it does not exist, 
+The following kit needs beneficiary details in order to check if the beneficiary exists and if it does not exist, 
 create a beneficiary for the payout transfer. For more information on Beneficiaries please go [here](https://dev.cashfree.com/payouts/integrations/standard-transfer#beneficiary)
 
-The kit reads beneficary details from the index.php file. Under the beneficiary object. For a list of required fields go [here](https://dev.cashfree.com/api-reference/payouts-api#create-beneficiary).
+The kit reads beneficiary details from the index.php file. Under the beneficiary object. For a list of required fields go [here](https://dev.cashfree.com/api-reference/payouts-api#create-beneficiary).
 Sample Fields to add a beneficiary using bankAccount and ifsc:
   1. beneId: uniqueId of the created beneficiary.
   2. name: beneficiary name.
   3. email: beneficiary email.
   4. phone: beneficiary phone.
-  5. bankAccount: beneficary's bank account.
+  5. bankAccount: beneficiary's bank account.
   6. ifsc: corresponding ifsc.
   7. address1: beneficiary address.
   8. city: beneficiary city.
@@ -53,12 +53,12 @@ Sample Fields to add a beneficiary using bankAccount and ifsc:
   10. pincode: beneficiary pincode.
   
 ### transferDetails:
-To request a payout transfer certain information is needed. To get a better understanding on requesting a transfer go [here](https://dev.cashfree.com/api-reference/payouts-api#standard-transfer).
+To request a payout transfer certain information is needed. To get a better understanding on requesting a transfer go [here](https://dev.cashfree.com/api-reference/payouts-api#transfers).
 
 Required Fields are:
   1. beneId: beneficiaryId to whom the transfer must be made to.
   2. amount: amount to be transferred.
-  3. trasnferId: unique transfer id to indentify the transfer.
+  3. transferId: unique transfer id to identify the transfer.
 
 
 ## Usage
@@ -66,7 +66,7 @@ Required Fields are:
 Once the index.php file is setup you can run the executable, to run the entire flow. Authorise, check and add beneficiary, 
 request for a payout transfer and get the transfer status.
 
-run the followin line in the terminal to run the script
+run the following line in the terminal to run the script
 ```
   php index.php
 ```
