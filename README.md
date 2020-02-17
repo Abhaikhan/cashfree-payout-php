@@ -10,7 +10,7 @@ This kit is linked to the standard transfer flow. Go [here](https://dev.cashfree
 
 The following kit contains the following functionalities:
     <ol>
-    <li> [getToken](https://dev.cashfree.com/api-reference/payouts-api#authorise): to get auth token to be used in all          following calls.
+    <li> [getToken](https://dev.cashfree.com/api-reference/payouts-api#authorise): to get the auth token to be used in all          following calls.
     <li> [getBeneficiary](https://dev.cashfree.com/api-reference/payouts-api#get-beneficiary-details): to get beneficiary details/check if a beneficiary exists.
     <li> [createBeneficiaryEntity](https://dev.cashfree.com/api-reference/payouts-api#create-beneficiary): to create beneficiaries.
     <li> [requestTransfer](https://dev.cashfree.com/api-reference/payouts-api#standard-transfer): to create a payout transfer.
@@ -27,9 +27,9 @@ follow the following build steps to compile the Integration kit:
 ### Pre Requisites:
 The following kit uses information stored within the index.php file. Before running the code for the first time open the index.php file
 and add the relevant details:
-  1. ClientId: This is a unique Identifier that identifies the merchant. For more information please go [here](https://dev.cashfree.com/development/api/credentials).
+  1. ClientId: This is a unique identifier that identifies the merchant. For more information please go [here](https://dev.cashfree.com/development/api/credentials).
   2. ClientSecret: Corresponding secret key for the given ClientId that helps Cashfree identify the merchant. For more information please go [here](https://dev.cashfree.com/development/api/credentials).
-  3. Environment: Enviornment to be hit. The following values are accepted prod: for production, test: for test enviornment.
+  3. Environment: Environment to be hit. The following values are accepted prod: for production, test: for test environment.
 
 ### IP Whitelisting:
 
@@ -52,10 +52,10 @@ Sample Fields to add a beneficiary using bankAccount and ifsc:
   9. state: beneficiary state.
   10. pincode: beneficiary pincode.
   
-### transferDetails:
-To request a payout transfer certain information is needed. To get a better understanding on requesting a transfer go [here](https://dev.cashfree.com/api-reference/payouts-api#transfers).
+### Transfer Details:
+To request a payout transfer certain information is needed. To get a better understanding of requesting a transfer go [here](https://dev.cashfree.com/api-reference/payouts-api#transfers).
 
-Required Fields are:
+Required fields are:
   1. beneId: beneficiaryId to whom the transfer must be made to.
   2. amount: amount to be transferred.
   3. transferId: unique transfer id to identify the transfer.
@@ -63,7 +63,7 @@ Required Fields are:
 
 ## Usage
 
-Once the index.php file is setup you can run the executable, to run the entire flow. Authorise, check and add beneficiary, 
+Once the index.php file is setup you can run the executable, to run the entire flow. Authorize, check and add beneficiary, 
 request for a payout transfer and get the transfer status.
 
 run the following line in the terminal to run the script
@@ -71,7 +71,7 @@ run the following line in the terminal to run the script
   php index.php
 ```
 
-You can change the necessary values in the index.php file as per your requirements and re run the script whenever needed.
+You can change the necessary values in the index.php file as per your requirements and re-run the script whenever needed.
 
 ## Doubts
 
