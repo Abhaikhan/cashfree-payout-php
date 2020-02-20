@@ -37,7 +37,7 @@ Your IP has to be whitelisted to hit Cashfree's server. For more information ple
 
 ### Beneficiary:
 The following kit needs beneficiary details in order to check if the beneficiary exists and if it does not exist, 
-create a beneficiary for the payout transfer. For more information on Beneficiaries please go [here](https://dev.cashfree.com/payouts/integrations/standard-transfer#beneficiary)
+create a beneficiary for the payout transfer. For more information on Beneficiaries please go [here](https://dev.cashfree.com/api-reference/payouts-api#beneficiary)
 
 The kit reads beneficiary details from the index.php file. Under the beneficiary object. For a list of required fields go [here](https://dev.cashfree.com/api-reference/payouts-api#create-beneficiary).
 Sample Fields to add a beneficiary using bankAccount and ifsc:
